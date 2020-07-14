@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+<item android:id="@+id/one"
+    android:icon="@drawable/a1"
+    android:title="one"/>
+
+        <item android:id="@+id/two"
+            android:icon="@drawable/a2"
+            android:title="two"/>
+
+        <item android:id="@+id/three"
+            android:icon="@drawable/a3"
+            android:title="three"/>
+
+        <item android:id="@+id/four"
+            android:icon="@drawable/a4"
+            android:title="four"/>
+        <item android:id="@+id/five"
+            android:icon="@drawable/a5"
+            android:title="five"/>
+    </group>
+
+
+
+
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/one1"
+            android:icon="@drawable/a1"
+            android:title="one"/>
+
+        <item android:id="@+id/two1"
+            android:icon="@drawable/a2"
+            android:title="two"/>
+
+        <item android:id="@+id/three1"
+            android:icon="@drawable/a3"
+            android:title="three"/>
+
+        <item android:id="@+id/four1"
+            android:icon="@drawable/a4"
+            android:title="关于"/>
+        <item android:id="@+id/five1"
+            android:icon="@drawable/a5"
+            android:title="设置"/>
+    </group>
+
+
+</menu>

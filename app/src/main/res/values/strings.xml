@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">案例集</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="default_string1">1前方正在施工...</string>
+    <string name="default_string2">2前方正在施工...</string>
+    <string name="default_string3">3前方正在施工...</string>
+    <string name="default_string4">4前方正在施工...</string>
+    <string name="default_string5">5前方正在施工...</string>
+    <string name="default_string6">6前方正在施工...</string>
+    <string name="default_string7">7前方正在施工...</string>
+    <string name="default_string8">8前方正在施工...</string>
+    <string name="default_string9">9前方正在施工...</string>
+    <string name="default_string10">10前方正在施工...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="just_load_in_wifi">仅在WIFI下加载图片</string>
+
+    <string name="contract_me">1061665849</string>
+    <string name="about_me">关于我</string>
+    <string name="about_me_detail">
+
+          一个三流Android开发者，会点c#，
+        \n喜欢追逐前辈们的脚步；
+        \n博客：http://blog.csdn.net/nixcvf18
+        \nGitHub：https://github.com/nixcvf18
+        \n
+
+    </string>
+    <string name="about_myunit_demo">关于联合实例</string>
+    <string name="about_myunit_demo_detail">
+               MyUnitDemo，直译联合实例，是三师弟2020年写的Android基础入门教程附带的实战项目，
+        项目开源，遵循GPL v3协议，
+        \n\n仓库地址：https://github.com/nixcvf18
+        \n\n前期代码实现有详细的实现讲解，后面可能只说下遇到的问题以及难点。妹子源会慢慢增加，
+        除此之外还会添加一些新的小工具，敬请期待！项目仅用于技术交流学习，请勿用于商业用途！
+        \n\n如果你在使用过程中有任何建议或者大胆的想法，
+        \n欢迎加QQ：1061665849 进行反馈，
+        \n或者在酷安评论区留言与三师弟激烈摔♂跤；
+        \n\n依次谢谢：
+        \n\n 1.代码家提供的Gank.API
+        \n 2.Drakeet的开源项目Meizhi
+        \n 3.小荳的阿里健康品牌图标库的SVG图标，链接：
+        \n http://iconfont.cn/collections/detail?cid=1312
+        \n 很萌的一组图标，嘤嘤嘤！
+
+
+
+
+
+
+    </string>
+
+
+    <string name="about_open_source">用到的开源库</string>
+    <string name="about_open_source_detail">       com.android.support:appcompat-v7
+         \ncom.android.support:design
+         \ncom.android.support:cardview-v7
+         \ncom.android.support.constraint:constraint-layout
+         \ncom.github.chrisbanes:PhotoView
+         \ncom.r0adkll:slidableactivity
+         \ncom.makeramen:roundedimageview
+         \nio.reactivex.rxjava2:rxjava
+         \nio.reactivex.rxjava2:rxandroid
+         \ncom.squareup.okhttp3:okhttp
+         \ncom.squareup.okhttp3:logging-interceptor
+         \ncom.squareup.retrofit2:retrofit
+         \ncom.squareup.retrofit2:converter-gson
+         \ncom.squareup.retrofit2:adapter-rxjava2
+         \ncom.github.bumptech.glide:glide
+         \ncom.github.bumptech.glide:compiler
+         \ncom.jakewharton.timber:timber</string>
+</resources>

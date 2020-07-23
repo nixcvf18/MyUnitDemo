@@ -142,6 +142,9 @@ public class GirlBeanAdapter extends RecyclerView.Adapter<GirlBeanAdapter.ViewHo
 
 
 
+            textView.setText(bean.getDesc());
+
+
             imageView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

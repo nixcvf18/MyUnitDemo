@@ -5,11 +5,11 @@
 
 <item android:id="@+id/one"
     android:icon="@drawable/a1"
-    android:title="one"/>
+    android:title="看妹纸"/>
 
         <item android:id="@+id/two"
             android:icon="@drawable/a2"
-            android:title="two"/>
+            android:title="看干货"/>
 
         <item android:id="@+id/three"
             android:icon="@drawable/a3"
@@ -31,15 +31,15 @@
 
         <item android:id="@+id/one1"
             android:icon="@drawable/a1"
-            android:title="one"/>
+            android:title="six"/>
 
         <item android:id="@+id/two1"
             android:icon="@drawable/a2"
-            android:title="two"/>
+            android:title="seven"/>
 
         <item android:id="@+id/three1"
             android:icon="@drawable/a3"
-            android:title="three"/>
+            android:title="eight"/>
 
         <item android:id="@+id/four1"
             android:icon="@drawable/a4"

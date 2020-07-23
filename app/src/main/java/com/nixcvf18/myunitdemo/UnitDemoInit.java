@@ -13,6 +13,7 @@ public class UnitDemoInit {
     private static Long  HTTP_WRITE_TIMEOUT = 30L;
     private static Long  HTTP_READ_TIMEOUT = 30L;
 
+    //声明Kotlin实例
     public static OkHttpClient  okHttpClient;
 
 
@@ -20,6 +21,7 @@ public class UnitDemoInit {
 
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor(message -> Timber.tag("OkHttps").d(message));
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
+        //调用了kotlin代码
         OkHttpClient.Builder builder = new OkHttpClient.Builder()
                 .connectTimeout(HTTP_CONNECT_TIMEOUT, TimeUnit.SECONDS)
                 .writeTimeout(HTTP_WRITE_TIMEOUT, TimeUnit.SECONDS)

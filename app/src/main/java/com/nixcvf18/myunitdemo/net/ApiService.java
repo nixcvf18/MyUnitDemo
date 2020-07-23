@@ -1,6 +1,8 @@
 package com.nixcvf18.myunitdemo.net;
 
 import com.nixcvf18.myunitdemo.UnitDemoInit;
+import com.nixcvf18.myunitdemo.data.GHADetailsResults;
+import com.nixcvf18.myunitdemo.data.GanHuoAndroidResults;
 import com.nixcvf18.myunitdemo.data.GirlResults;
 
 import io.reactivex.Flowable;
@@ -46,15 +48,41 @@ public Apis  apis;
 
     //声明接口
     public interface  Apis{
-        //                                  (category)    (type)    (page)   (count)
+        //   美女图片                               (category)    (type)    (page)   (count)
         // https://gank.io/api/v2/data/category/Girl/type/Girl/page/1/count/10
         @GET("https://gank.io/api/v2/data/category/Girl/type/Girl/page/{pageNumber}/count/{countNumber}")
-        Flowable<GirlResults> fecthGrilBean(
+        Flowable<GirlResults> fetchGrilBean(
 
               @Path("pageNumber")  int pageNumber,
               @Path("countNumber")  int  countNumber
 
         );
+
+
+        //     干货--安卓                                  (category)   (type)                    (page)   (count)
+        //https://gank.io/api/v2/data/category/GanHuo/type/Android/page/1/count/10
+
+        @GET("https://gank.io/api/v2/data/category/GanHuo/type/Android/page/{pageNumber}/count/{countNumber}")
+        Flowable<GanHuoAndroidResults> fetchGanHuoAndroidBean(
+
+
+                @Path("pageNumber")  int pageNumber,
+                @Path ("countNumber") int  countNumber
+
+        );
+
+//干货  --安卓 ---文章详情      (postid)即干货文章id  从GanHuoAndroidBean类的 _id字段中可以获取过来
+//https://gank.io/api/v2/post/5e777432b8ea09cade05263f
+
+@GET("https://gank.io/api/v2/post/{postId} ")
+        Flowable<GHADetailsResults> fetchGHADetailsBean(
+
+        @Path("postId")  String postId
+
+
+
+        );
+
 
 
     }

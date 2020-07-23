@@ -30,7 +30,9 @@ import com.nixcvf18.myunitdemo.ui.fragment.CindyFragment;
 import com.nixcvf18.myunitdemo.ui.fragment.DavidFragment;
 import com.nixcvf18.myunitdemo.ui.fragment.EvansFragment;
 import com.nixcvf18.myunitdemo.ui.fragment.FredyFragment;
+import com.nixcvf18.myunitdemo.ui.fragment.GanHuoAndroidBeanFragment;
 import com.nixcvf18.myunitdemo.ui.fragment.GirlBeanFragment;
+import com.nixcvf18.myunitdemo.ui.fragment.GirlFragment;
 import com.nixcvf18.myunitdemo.ui.fragment.GreenFragment;
 import com.nixcvf18.myunitdemo.ui.fragment.HarryFragment;
 import com.nixcvf18.myunitdemo.ui.fragment.SettingFragment;
@@ -53,7 +55,7 @@ private  Toolbar toolbar;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //实例化碎片管理器对象
         fragmentManager = getSupportFragmentManager();
 
         initView();
@@ -84,18 +86,19 @@ private  Toolbar toolbar;
     private void initData() {
 
       fragmentManager.beginTransaction()
-      .replace(R.id.content_ConstraintLayout, AliceFragment.newInstance());
+      .replace(R.id.content_ConstraintLayout, AboutMeFragment.newInstance()).commit();
 
-toolbar.setTitle("看妹纸");
+        toolbar.setTitle("关于我");
 
 
     }
 
     private void initView() {
         toolbar = findViewById(R.id.toolbar);
+        //将toolbar设置为Activity的标题栏
         setSupportActionBar(toolbar);
 
-
+        //实例化控件
         drawerLayout=findViewById(R.id.drawerLayout);
         constraintLayout = findViewById(R.id.content_ConstraintLayout);
         navigationView = findViewById(R.id.navigationView);
@@ -190,9 +193,9 @@ toolbar.setTitle("看妹纸");
 
             case R.id.two:
                 fragmentManager.beginTransaction()
-                        .replace(R.id.content_ConstraintLayout, BobFragment.newInstance())
+                        .replace(R.id.content_ConstraintLayout, GanHuoAndroidBeanFragment.newInstance())
                         .commit();
-                toolbar.setTitle("关于2");
+                toolbar.setTitle("看干货");
                 break;
 
             case R.id.three:

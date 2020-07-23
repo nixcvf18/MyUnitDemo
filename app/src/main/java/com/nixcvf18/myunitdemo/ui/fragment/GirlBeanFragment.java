@@ -29,7 +29,6 @@ import com.nixcvf18.myunitdemo.utils.ToastUtil;
 
 import java.util.ArrayList;
 
-import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.disposables.Disposable;
@@ -279,12 +278,12 @@ public class GirlBeanFragment extends Fragment {
 
     private void fetchGirlBean(boolean isRefresh) {
         //返回用flowable 包裹的数据集合
-        Disposable subscribe = ApiService.getInstance().apis.fecthGrilBean(currentPage, 20)
+        Disposable subscribe = ApiService.getInstance().apis.fetchGrilBean(currentPage, 20)
                 .subscribeOn(Schedulers.io())
                 //在主线程中 观察 flowable
                 .observeOn(AndroidSchedulers.mainThread())
                 .doOnSubscribe(subscription -> swipeRefreshLayout.setRefreshing(true))
-                //在flowable 发送数据集合成功后   设置当前不执行下拉刷新控件的刷新操作
+                //在flowable 发送数据集合成功后 (或者被取消后)  设置当前不执行下拉刷新控件的刷新操作
                 .doFinally(() -> swipeRefreshLayout.setRefreshing(false))
                 //返回一个 一次性的资源
                 .subscribe(data -> {

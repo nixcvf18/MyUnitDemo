@@ -6,5 +6,6 @@
     android:id="@+id/content_ConstraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorLoveEye"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/appbarlayout_and_contentlayout" />
